@@ -1,0 +1,9 @@
+package org;
+
+public class PracticeProj {
+
+	public PracticeProj() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

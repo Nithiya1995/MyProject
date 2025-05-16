@@ -1,0 +1,14 @@
+package org;
+
+
+public class PracticeProj {
+
+	public PracticeProj() {
+		
+		
+	}
+
+	public static void main(String[] args) {
+		WebDriver driver() = new ChromeDriver()
+;	}
+}

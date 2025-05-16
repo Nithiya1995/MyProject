@@ -1,0 +1,35 @@
+package org.login;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class LoginExample {
+
+	
+		// TODO Auto-generated constructor stub
+	
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+     WebDriver driver = new ChromeDriver();
+     driver.get("https://leafground.com/alert.xhtml");
+	
+	WebElement alert1 = driver.findElement(By.xpath("/html/body/div[1]/div[5]/div[2]/form/div/div[1]/div[1]/button"));
+	alert1.click();
+	Alert alert = driver.switchTo().alert();
+	String alertMess = alert.getText();
+	
+	if (alertMess.contains("simple")) {
+	alert.accept();
+	System.out.println(alertMess);
+	driver.close();
+	}
+	}
+	
+
+}
