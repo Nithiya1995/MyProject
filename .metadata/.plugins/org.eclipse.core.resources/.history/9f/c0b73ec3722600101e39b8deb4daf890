@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package org.com;
+
+/**
+ * 
+ */
+public class JavaCode {
+
+	/**
+	 * 
+	 */
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] numbers = {1,5,678,2,9};
+		System.out.println(numbers[0]);
+		System.out.println(numbers[4]);
+		System.out.println("----");
+		for(int i=4;i<numbers.length; i--) {
+		    System.out.println(numbers[i]);
+	}
+		       System.out.println("total number of array"+ numbers.length);
+		
+	}
+}
+
